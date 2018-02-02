@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eric's Website.(In Progress)</title>
+        <style>
+            body {
+              background-image: url('http://i.imgur.com/a5LEm5D.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 10px;  
+                font-family: arial;
+            }
+            header {
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+            #all-contents {
+                max-width: 800px;
+                margin: auto;
+            }
+    
+            /* navigation menu */
+            nav {
+                 background: rgb(36, 83, 153);
+                margin: 0 auto;
+                display: flex;
+                padding: 10px;
+            }
+            nav header {
+                display: flex;
+                align-items: center;
+                color: rgb(255, 255, 255);
+                flex: 1;
+            }
+            nav ul {
+                list-style-image: none;
+            }
+            nav li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            nav a {
+                text-decoration: none;
+                color: #fff;
+            }
+    
+            /* main container area beneath menu */
+            main {
+                background: rgb(102, 113, 130); 
+                display: flex;
+                opacity: 0.0;
+                filter: alpha(opacity=0);
+                transition: opacity 4s;
+            }
+            
+            main:hover {
+                background: rgb(102, 113, 130); 
+                display: flex;
+                opacity: 1.0;
+                filter: alpha(opacity=100);
+            }
+            
+            .sidebar {
+                margin-left: 20px;
+                padding: 10px;
+            }
+            .sidebar img {
+                width: 300px;
+                height: 250px;
+            }
+            
+            .pic2 {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            .pic2 img {
+                width: 300px;
+                height: 250px;
+            }
+            
+            .content {
+                flex: 1;
+                padding: 15px;
+            }
+            .interests header {
+                font-size: 1.25em;
+            }
+        </style>
+    </head>
+    
+    
+    <body>
+        <div id="all-contents">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                </ul>
+            </nav>
+            
+            
+            <main>
+                
+                <div class="sidebar">
+                    <img src="http://gearnuke.com/wp-content/uploads/2016/04/dark-souls-3-1-2.jpg">
+                </div>
+                
+                <div class="content">
+                    <header>Eric Covell</header>
+                    <p>Student at B.C.H.S.</p>
+                    
+                    <section class="interests">
+                        <header>Interests:</header>
+                        <ul>
+                            <li>Video Games</li>
+                            <li>Music</li>
+                            <li>Sleep</li>
+                        </ul>
+                    </section>
+                </div>
+                
+                <div class="pic2">
+                    <img src="https://i.pinimg.com/originals/6c/72/cf/6c72cfa0f636cba37062f7a1855caa12.jpg">
+                </div> 
+                
+            </main>
+        </div>
+    </body>
+</html>
